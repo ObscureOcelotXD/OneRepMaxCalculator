@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <math.h>
 
 int main()
 {
@@ -21,6 +22,9 @@ int main()
     std::cout << "Select Calculation Method: \n";
     std::cout << "1. Bryzcki Formula\n";
     std::cout << "2. Epley Formula\n";
+    std::cout << "3. Lombardi Formula\n";
+    std::cout << "4. O'Conner Formula\n";
+
     std::cin >> formula;
 
 
@@ -32,6 +36,14 @@ int main()
         case 2:
             oneRepMax = weight * (1 + (0.0333 * numberOfReps));
             formulaName = "Epley Formula";
+            break;
+        case 3:
+            oneRepMax = weight * (pow(numberOfReps, 0.1));
+            formulaName = "Lombardi Formula";
+            break;
+        case 4:
+            oneRepMax = weight * (1 + (0.025 * numberOfReps));
+            formulaName = "O'Conner Formula";
             break;
     }
 
