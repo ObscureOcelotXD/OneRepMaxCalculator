@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OneRepMaxCalculator", "OneRepMaxCalculator\OneRepMaxCalculator.vcxproj", "{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Debug|x64.ActiveCfg = Debug|x64
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Debug|x64.Build.0 = Debug|x64
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Debug|x86.ActiveCfg = Debug|Win32
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Debug|x86.Build.0 = Debug|Win32
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Release|x64.ActiveCfg = Release|x64
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Release|x64.Build.0 = Release|x64
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Release|x86.ActiveCfg = Release|Win32
+		{73A47F0F-7B0D-4D72-B87A-FEA1E97F0452}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44C1F043-B41F-411E-A02B-AF886B3B5406}
+	EndGlobalSection
+EndGlobal
