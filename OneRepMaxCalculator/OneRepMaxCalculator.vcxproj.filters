@@ -18,5 +18,19 @@
     <ClCompile Include="OneRepMaxCalculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="onerep_max.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nutrition_estimates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="onerep_max.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nutrition_estimates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

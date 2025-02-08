@@ -128,6 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="OneRepMaxCalculator.cpp" />
+    <ClCompile Include="onerep_max.cpp" />
+    <ClCompile Include="nutrition_estimates.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nutrition_estimates.h" />
+    <ClInclude Include="onerep_max.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
