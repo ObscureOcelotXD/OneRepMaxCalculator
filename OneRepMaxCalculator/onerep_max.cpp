@@ -2,7 +2,7 @@
 #include <iomanip>
 #include "onerep_max.h"
 
-double weight = 0;
+static double weight = 0;
 double numberOfReps = 0;
 double oneRepMax = 0.0;
 

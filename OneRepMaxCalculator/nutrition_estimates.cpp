@@ -2,37 +2,37 @@
 #include <iomanip>
 #include "nutrition_estimates.h"
 
+static double weight = 0;
+
+double protienGainLow = 0;
+double protienGainHigh = 0;
+double protienFatLossLow = 0;
+double protienFatLossHigh = 0;
+double protienMaintenenceLow = 0;
+double protienMaintenenceHigh = 0;
+
+double carbsGainLow = 0;
+double carbsGainHigh = 0;
+double carbsFatLossLow = 0;
+double carbsFatLossHigh = 0;
+double carbsMaintenenceLow = 0;
+double carbsMaintenenceHigh = 0;
+
+double fatsGainLow = 0;
+double fatsGainHigh = 0;
+double fatsFatLossLow = 0;
+double fatsFatLossHigh = 0;
+double fatsMaintenenceLow = 0;
+double fatsMaintenenceHigh = 0;
+
+double caloriesGainLow = 0;
+double caloriesGainHigh = 0;
+double caloriesFatLossLow = 0;
+double caloriesFatLossHigh = 0;
+double caloriesMaintainLow = 0;
+double caloriesMaintainHigh = 0;
+
 void nutritionLogic() {
-
-    double weight = 0;
-
-    double protienGainLow = 0;
-    double protienGainHigh = 0;
-    double protienFatLossLow = 0;
-    double protienFatLossHigh = 0;
-    double protienMaintenenceLow = 0;
-    double protienMaintenenceHigh = 0;
-
-    double carbsGainLow = 0;
-    double carbsGainHigh = 0;
-    double carbsFatLossLow = 0;
-    double carbsFatLossHigh = 0;
-    double carbsMaintenenceLow = 0;
-    double carbsMaintenenceHigh = 0;
-
-    double fatsGainLow = 0;
-    double fatsGainHigh = 0;
-    double fatsFatLossLow = 0;
-    double fatsFatLossHigh = 0;
-    double fatsMaintenenceLow = 0;
-    double fatsMaintenenceHigh = 0;
-
-    double caloriesGainLow = 0;
-    double caloriesGainHigh = 0;
-    double caloriesFatLossLow = 0;
-    double caloriesFatLossHigh = 0;
-    double caloriesMaintainLow = 0;
-    double caloriesMaintainHigh = 0;
 
     std::cout << "Enter Weight in lb \n";
     std::cin >> weight;
@@ -97,5 +97,46 @@ void nutritionLogic() {
     std::cout << "To maintain muscle you should consume between: " << carbsMaintenenceLow << " and " << carbsMaintenenceHigh << " grams of carbs. \n";
     std::cout << "To maintain muscle you should consume between: " << fatsMaintenenceLow << " and " << fatsMaintenenceHigh << " grams of fats. \n";
     std::cout << "To maintain muscle calories should be between: " << caloriesMaintainLow << " - " << caloriesMaintainHigh << " kcal. \n\n";
+
+    displayNutrition();
+
+}
+
+void displayNutrition() {
+
+    std::cout << "\nNutrition Table for " << weight << " lbs\n";
+    std::cout << std::left
+        << std::setw(15) << "Goal"
+        << std::setw(15) << "Protein (g)"
+        << std::setw(15) << "Carbs (g)"
+        << std::setw(15) << "Fats (g)"
+        << std::setw(20) << "Calories (kcal)"
+        << std::endl;
+
+    std::cout << std::string(80, '-') << std::endl;
+
+    std::cout << std::left
+        << std::setw(15) << "Muscle Gain"
+        << std::setw(3) << protienGainLow << std::setw(1) << "-" << std::setw(11) << protienGainHigh
+        << carbsGainLow << std::setw(1) << "-" << std::setw(5) << std::setw(11) << carbsGainHigh
+        << fatsGainLow << std::setw(1) << "-" << std::setw(12) << fatsGainHigh
+        << caloriesGainLow << "-" << caloriesGainHigh
+        << std::endl;
+
+    std::cout << std::left
+        << std::setw(15) << "Lean Out"
+        << std::setw(3) << protienFatLossLow << std::setw(1) << "-" << std::setw(11) << protienFatLossHigh
+        << carbsFatLossLow << std::setw(1) << "-" << std::setw(5) << std::setw(11) << carbsFatLossHigh
+        << fatsFatLossLow << std::setw(1) << "-" << std::setw(12) << fatsFatLossHigh
+        << caloriesFatLossLow << "-" << caloriesFatLossHigh
+        << std::endl;
+
+    std::cout << std::left
+        << std::setw(15) << "Maintain"
+        << std::setw(3) << protienMaintenenceLow << std::setw(1) << "-" << std::setw(11) << protienMaintenenceHigh
+        << carbsMaintenenceLow << std::setw(1) << "-" << std::setw(5) << std::setw(11) << carbsMaintenenceHigh
+        << fatsMaintenenceLow << std::setw(1) << "-" << std::setw(12) << fatsMaintenenceHigh
+        << caloriesMaintainLow << "-" << caloriesMaintainHigh
+        << std::endl;
 
 }
