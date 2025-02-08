@@ -7,20 +7,22 @@
 #include "nutrition_estimates.h"
 int main()
 {
+    char choice;
+    do {
+        int calculationChoice = 0;
+        std::cout << "Enter 1 for one rep max calculator. Enter 2 for Protien consumption Calculator\n";
+        std::cin >> calculationChoice;
 
-    int calculationChoice = 0;
+        if (calculationChoice == 1) {
+            oneRepMaxLogic();
+        }
 
-    std::cout << "Enter 1 for one rep max calculator. Enter 2 for Protien consumption Calculator\n";
-    std::cin >> calculationChoice;
+        else if (calculationChoice == 2) {
+            nutritionLogic();
+        }
+        std::cout << "\nWould you like to calculate again? (Y/N): ";
+        std::cin >> choice;
 
-    if (calculationChoice == 1) {
-        oneRepMaxLogic();
-    }
-
-    else if (calculationChoice == 2) {
-        nutritionLogic();
-    }
-
-    system("pause");
+    } while (choice == 'Y' || choice == 'y');
 }
 
